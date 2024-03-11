@@ -80,6 +80,10 @@ p {
   color: var(--github);
   background-color: var(--white);
 }
+.pendingThings {
+  color: brown;
+  font-size: 32px;
+}
 /* Global CSS Ends */
 /* Main Headings */
 

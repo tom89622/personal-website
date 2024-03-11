@@ -30,19 +30,6 @@ export default function Footer () {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
                 to="AboutMe"
                 className="text-md"
               >
@@ -56,10 +43,10 @@ export default function Footer () {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
+                to="MyPortfolio"
                 className="text-md"
               >
-                Contact
+                Portfolio
               </Link>
             </li>
             <li>
@@ -69,10 +56,10 @@ export default function Footer () {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="Contact"
                 className="text-md"
               >
-                Testimonials
+                Contact
               </Link>
             </li>
           </ul>
@@ -101,7 +88,6 @@ export default function Footer () {
                   />
                 </svg>
               </a>
-              <p className="text-md"> Add email sending here</p>
             </li>
           </ul>
         </div>
@@ -110,7 +96,7 @@ export default function Footer () {
       <div className="footer--content--container">
         <p className="footer--content">Made by Jen-Hung (Tom) Chang</p>
         <div className="footer--social--icon">
-          <p className="text-md">Pending</p>
+          <p className="pendingThings">Pending</p>
           <ul>
             <li>
               <Link
