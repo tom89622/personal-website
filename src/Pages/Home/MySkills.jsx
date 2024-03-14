@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import data from "../../data/index.json";
+import React from "react";
 
 export default function MySkills() {
   return(
@@ -16,7 +18,7 @@ export default function MySkills() {
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>
               <h3 className="skills--section--description">{item.description}</h3>
-              
+              <Link to={`../Pages/Skills/Skill_${item.id}`}>Read more</Link>
             </div>
           </div>
         ))}
