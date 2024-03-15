@@ -20,7 +20,7 @@ p {
   --primary: #5e3bee;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
-  --github: #e62872;
+  --github: #FFA116;
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
@@ -70,8 +70,8 @@ p {
   background-color: var(--github);
   border: var(--github);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: right;
   align-items: center;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
   gap: 16px;
@@ -346,9 +346,10 @@ h2 {
   gap: 21.3px;
 }
 .portfolio--section--container {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
+  align-items: flex-start;
   gap: 42.6px;
   width: 100%;
 }
@@ -361,7 +362,10 @@ h2 {
 }
 .portfolio--section--card {
   display: flex;
-  flex-direction: column;
+  padding: 32px;
+  flex-direction: row;
+  width: fit-content;
+  min-width: 90%;
   align-items: flex-start;
   gap: 32px;
   flex: 1 0 0;
@@ -371,16 +375,50 @@ h2 {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
+@media screen and (max-width: 768) {
+  .portfolio--section--card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 32px;
+    flex: 1 0 0;
+    background: #fff;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+}
 .portfolio--section--card--content {
   display: flex;
   padding: 32px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
 .portfolio--section--title {
   color: var(--heading-color);
+}
+.portfolio--section--content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  padding-top: 5px;
+  padding: 5px;
+  word-wrap:break-word;
+}
+
+.portfolio--githubImg{
+  display: flex;
+  height: auto;
+  width: 100%;
+  gap: 32px;
+  padding-top: 5px;
+  padding: 5px;
+  object-fit: cover;
 }
 .portfolio--link {
   text-decoration: none;

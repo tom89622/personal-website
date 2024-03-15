@@ -1,3 +1,7 @@
+import { Link } from "react-scroll"; // diff between from react-dom
+import ContactMe from "./ContactMe"
+import React from "react";
+
 export default function HeroSection() {
   return (
     <section id="heroSection" className="hero--section">
@@ -15,7 +19,17 @@ export default function HeroSection() {
             </p>
           </h1>
         </div>
-        <a className="btn btn-primary" href="mailto:tom.jenhungchang@gmail.com" >Get In Touch</a>
+        <Link
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+          className="btn btn-primary"
+        >
+          Get In Touch
+        </Link>
         
       </div>
       <div className="hero--section--img">

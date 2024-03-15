@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import data from "../../data/index.json";
 import React from "react";
 
-export default function MySkills() {
+import data from "../../data/index.json";export default function MySkills() {
   return(
     <section className="skills--section" id="mySkills">
       <div className="porfolio--container">
@@ -18,7 +17,15 @@ export default function MySkills() {
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>
               <h3 className="skills--section--description">{item.description}</h3>
-              <Link to={`../Pages/Skills/Skill_${item.id}`}>Read more</Link>
+              <Link 
+                to={`../Pages/Skills/Skill_${item.id}`} 
+                className="navbar--content"
+                spy={true}
+                offset={-70}
+                duration={500}
+              >
+                Read more
+              </Link>
             </div>
           </div>
         ))}
