@@ -17,7 +17,7 @@ p {
   margin: 0;
 }
 :root {
-  --primary: #5e3bee;
+  --primary: #00539B;
   --heading-color: #282938;
   --bg-shade: #f5fcff;
   --github: #FFA116;
@@ -360,26 +360,37 @@ h2 {
 .portfolio--section--img > img {
   width: 100%;
 }
+.portfolio--section--container {
+  overflow-y: scroll;
+}
+.portfolio--section--container table {
+  border-collapse: collapse;
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Adjust width as needed */
+}
+.portfolio--section--container table th,
+.portfolio--section--container table td {
+  padding: 10px; /* Adjust padding for desired gap */
+  border: 1px aliceblue #ddd; /* Add a border for better separation (optional) */
+}
 .portfolio--section--card {
-  display: flex;
-  padding: 32px;
-  flex-direction: row;
-  width: fit-content;
-  min-width: 90%;
-  align-items: flex-start;
-  gap: 32px;
-  flex: 1 0 0;
+  gap: 16px;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
-  cursor: pointer;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+.portfolio--section--card--content {
+  display: block;
+  padding: 32px;
+  gap: 32px;
 }
 @media screen and (max-width: 768) {
   .portfolio--section--card {
     display: flex;
     padding: 32px;
     flex-direction: column;
+    width: 50%;
     gap: 32px;
     flex: 1 0 0;
     background: #fff;
@@ -389,16 +400,25 @@ h2 {
     border-top-right-radius: 12px;
   }
 }
-.portfolio--section--card--content {
+.portfolio--githubImg{
   display: flex;
-  padding: 32px;
-  flex-direction: row;
-  align-items: flex-start;
+  height: auto;
+  width: 80%;
+  text-align: center; /* Center content horizontally */
+  display: flex; /* Allow flexbox for vertical centering */
+  justify-content: center; /* Align content horizontally in the center */
+  align-items: center; /* Align content vertically in the center */
   gap: 32px;
-  align-self: stretch;
+  padding-top: 5px;
+  padding: 5px;
 }
 .portfolio--section--title {
+  align-items: flex-start;
   color: var(--heading-color);
+  gap: 32px;
+  align-self: stretch;
+  padding-top: 5px;
+  padding: 5px;
 }
 .portfolio--section--content {
   display: flex;
@@ -409,16 +429,6 @@ h2 {
   padding-top: 5px;
   padding: 5px;
   word-wrap:break-word;
-}
-
-.portfolio--githubImg{
-  display: flex;
-  height: auto;
-  width: 100%;
-  gap: 32px;
-  padding-top: 5px;
-  padding: 5px;
-  object-fit: cover;
 }
 .portfolio--link {
   text-decoration: none;
