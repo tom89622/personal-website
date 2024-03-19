@@ -13,8 +13,9 @@ export default function HeroSection() {
             <br/>
             Engineer
             <p className="hero--section--description">
-              description--- <br></br> bla bla blaa
-
+              Pursuing a Master of Engineering <br/>
+              in Electrical and Computer Engineering <br/>
+              at Duke University
               <br/>
             </p>
           </h1>

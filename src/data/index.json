@@ -3,49 +3,26 @@
     {
       "id": "1",
       "src": "./img/product-chain-1.png",
-      "title": "Skill_1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "System Programming",
+      "description": "I developed strong system programming skills, encompassing C/C++, Verilog, and Assembly, with a focus on Compilers, Operating Systems, and Computer Organization."
     },
     {
       "id": "2",
       "src": "./img/tag-1.png",
-      "title": "Skill_2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "title": "Artificial Intelligence",
+      "description": "While producing the research \"Using Action Recognition to Crack reCAPTCHA,\" I comprehensived Machine Learning and Computer Vision through the Stanford CS229 and other self-learning."
     },
     {
       "id": "3",
-      "src": "./img/feather-pen-2.png",
-      "title": "Skill_3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/feather-pen-1.png",
+      "title": "Full-Stack Development",
+      "description": "Developed full-stack development skills by tackling real-world projects, including my work on the Taiwan Sustainable Campus Project and building my own website"
     },
     {
       "id": "4",
-      "src": "./img/feather-pen-1.png",
-      "title": "Skill_3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
-    }
-  ],
-  "portfolio": [
-    {
-      "id": "1",
-      "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
-    },
-    {
-      "id": "2",
-      "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
-    },
-    {
-      "id": "3",
-      "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "View In Github"
+      "src": "./img/feather-pen-2.png",
+      "title": "Data Mining",
+      "description": "Developed data mining skills through a comprehensive Introduction to Data Mining course and applied them in impactful course projects"
     }
   ],
   "testimonial": [

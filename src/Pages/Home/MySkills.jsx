@@ -17,15 +17,7 @@ import data from "../../data/index.json";export default function MySkills() {
             <div className="skills--section--card--content">
               <h3 className="skills--section--title">{item.title}</h3>
               <h3 className="skills--section--description">{item.description}</h3>
-              <Link 
-                to={`../Pages/Skills/Skill_${item.id}`} 
-                className="navbar--content"
-                spy={true}
-                offset={-70}
-                duration={500}
-              >
-                Read more
-              </Link>
+              
             </div>
           </div>
         ))}
@@ -40,3 +32,12 @@ import data from "../../data/index.json";export default function MySkills() {
 }
   
 
+// <Link 
+//   to={`../Pages/Skills/Skill_${item.id}`} 
+//   className="navbar--content"
+//   spy={true}
+//   offset={-70}
+//   duration={500}
+// >
+//   Read more
+// </Link>

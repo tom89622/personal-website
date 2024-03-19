@@ -109,7 +109,6 @@ export default function Footer () {
       <div className="footer--content--container">
         <p className="footer--content">Made by Jen-Hung (Tom) Chang</p>
         <div className="footer--social--icon">
-          <p className="pendingThings">Pending</p>
           <ul>
             <li>
               <Link

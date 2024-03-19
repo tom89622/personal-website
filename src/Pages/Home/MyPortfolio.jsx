@@ -51,7 +51,7 @@ const MyPortfolio = ({ username }) => {
             rel="noopener noreferrer"
             className='portfolio--section--title'
           >
-            {row.original.name}
+            <h3>{row.original.name}</h3>
           </a>
         ),
       },
